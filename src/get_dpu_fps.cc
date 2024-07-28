@@ -40,8 +40,8 @@ void runDPU(vart::Runner* runner, int8_t *imageInputs, int8_t *FCResult)
   // get in/out tensors and dims
   auto outputTensors = runner->get_output_tensors();
   auto inputTensors = runner->get_input_tensors();
-  auto out_dims = outputTensors[0]->get_dims();
-  auto in_dims = inputTensors[0]->get_dims();
+  auto out_dims = outputTensors[0]->get_shape(); //->get_dims();
+  auto in_dims = inputTensors[0]->get_shape(); // ->get_dims();
   int batchSize = in_dims[0];
   int outSize   = shapes.outTensorList[0].size;
   int inSize    = shapes.inTensorList[0].size;

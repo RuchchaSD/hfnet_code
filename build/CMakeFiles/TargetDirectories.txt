@@ -1,0 +1,4 @@
+/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/hfnet_code/build/CMakeFiles/main_int8.dir
+/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/hfnet_code/build/CMakeFiles/get_dpu_fps.dir
+/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/hfnet_code/build/CMakeFiles/edit_cache.dir
+/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/hfnet_code/build/CMakeFiles/rebuild_cache.dir

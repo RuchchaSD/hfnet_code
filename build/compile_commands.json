@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/hfnet_code/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/hfnet_code/include -isystem /usr/include/opencv4 -g -std=gnu++17 -o CMakeFiles/main_int8.dir/src/common.cpp.o -c /root/jupyter_notebooks/pynq-dpu/cifar10_tf2/hfnet_code/src/common.cpp",
+  "file": "/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/hfnet_code/src/common.cpp"
+},
+{
+  "directory": "/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/hfnet_code/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/hfnet_code/include -isystem /usr/include/opencv4 -g -std=gnu++17 -o CMakeFiles/main_int8.dir/src/main_int8.cc.o -c /root/jupyter_notebooks/pynq-dpu/cifar10_tf2/hfnet_code/src/main_int8.cc",
+  "file": "/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/hfnet_code/src/main_int8.cc"
+},
+{
+  "directory": "/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/hfnet_code/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/hfnet_code/include -isystem /usr/include/opencv4 -g -std=gnu++17 -o CMakeFiles/get_dpu_fps.dir/src/common.cpp.o -c /root/jupyter_notebooks/pynq-dpu/cifar10_tf2/hfnet_code/src/common.cpp",
+  "file": "/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/hfnet_code/src/common.cpp"
+},
+{
+  "directory": "/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/hfnet_code/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/hfnet_code/include -isystem /usr/include/opencv4 -g -std=gnu++17 -o CMakeFiles/get_dpu_fps.dir/src/get_dpu_fps.cc.o -c /root/jupyter_notebooks/pynq-dpu/cifar10_tf2/hfnet_code/src/get_dpu_fps.cc",
+  "file": "/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/hfnet_code/src/get_dpu_fps.cc"
+}
+]
