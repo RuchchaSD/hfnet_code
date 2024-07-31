@@ -314,6 +314,12 @@ glog_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/glog
 //The directory containing a CMake configuration file for unilog.
 unilog_DIR:PATH=/usr/share/cmake/unilog
 
+//The directory containing a CMake configuration file for vart.
+vart_DIR:PATH=/usr/share/cmake/vart
+
+//The directory containing a CMake configuration file for vitis_ai_library.
+vitis_ai_library_DIR:PATH=/usr/share/cmake/vitis_ai_library
+
 //The directory containing a CMake configuration file for xir.
 xir_DIR:PATH=/usr/share/cmake/xir
 
@@ -472,11 +478,11 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Boost
 FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake][c ][v1.74.0()]
 //Details about finding OpenCV
-FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr][v4.5.4(4.5.4)]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr][cfound components: opencv_core opencv_video opencv_videoio opencv_imgproc opencv_imgcodecs opencv_highgui ][v4.5.4()]
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.2()]
 //Details about finding Protobuf
-FIND_PACKAGE_MESSAGE_DETAILS_Protobuf:INTERNAL=[/usr/lib/aarch64-linux-gnu/libprotobuf.so][/usr/include][v3.12.4()]
+FIND_PACKAGE_MESSAGE_DETAILS_Protobuf:INTERNAL=[/usr/lib/aarch64-linux-gnu/libprotobuf.so][/usr/include][v3.12.4(3.4.0)]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: PKG_CONFIG_ARGN

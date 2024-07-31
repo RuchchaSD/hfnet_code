@@ -12,6 +12,8 @@ find_package(UNILOG 3.5.0 REQUIRED)
 find_package(Glog 0.4.0 REQUIRED)
 find_package(Threads REQUIRED)
 find_package(XIR 3.5.0)
+find_package(vitis_ai_library) 
+
 
 message(STATUS "OpenCV version: ${OpenCV_VERSION}")
 message(STATUS "VART version: ${VART_VERSION}")

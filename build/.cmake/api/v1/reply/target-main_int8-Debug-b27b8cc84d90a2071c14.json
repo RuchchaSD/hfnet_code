@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "test"
+			"path" : "main_int8"
 		}
 	],
 	"backtrace" : 1,
@@ -26,25 +26,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 44,
+				"line" : 34,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 70,
+				"line" : 52,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 24,
+				"line" : 26,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 23,
+				"line" : 25,
 				"parent" : 0
 			}
 		]
@@ -89,7 +89,7 @@
 			]
 		}
 	],
-	"id" : "test::@6890427a1f51a3e7e1df",
+	"id" : "main_int8::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -279,6 +279,11 @@
 			},
 			{
 				"backtrace" : 2,
+				"fragment" : "/usr/lib/aarch64-linux-gnu/libopencv_highgui.so.4.5.4d",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
 				"fragment" : "-lvart-runner",
 				"role" : "libraries"
 			},
@@ -295,11 +300,6 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "-lglog",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "/usr/lib/aarch64-linux-gnu/libopencv_highgui.so.4.5.4d",
 				"role" : "libraries"
 			},
 			{
@@ -395,8 +395,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "test",
-	"nameOnDisk" : "test",
+	"name" : "main_int8",
+	"nameOnDisk" : "main_int8",
 	"paths" : 
 	{
 		"build" : ".",
@@ -424,7 +424,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/test.cpp",
+			"path" : "src/main_int8.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

@@ -1263,7 +1263,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr][v4.5.4(4.5.4)]"
+			"value" : "[/usr][cfound components: opencv_core opencv_video opencv_videoio opencv_imgproc opencv_imgcodecs opencv_highgui ][v4.5.4()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig",
@@ -1287,7 +1287,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/lib/aarch64-linux-gnu/libprotobuf.so][/usr/include][v3.12.4()]"
+			"value" : "[/usr/lib/aarch64-linux-gnu/libprotobuf.so][/usr/include][v3.12.4(3.4.0)]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",
@@ -1988,6 +1988,30 @@
 			],
 			"type" : "PATH",
 			"value" : "/usr/share/cmake/unilog"
+		},
+		{
+			"name" : "vart_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for vart."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/share/cmake/vart"
+		},
+		{
+			"name" : "vitis_ai_library_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for vitis_ai_library."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/share/cmake/vitis_ai_library"
 		},
 		{
 			"name" : "xir_DIR",

@@ -213,7 +213,13 @@ void run_CNN(vart::Runner* runner) {
     in_dims[0] = runSize;
     out_dims[0] = batchSize;
     for (unsigned int i = 0; i < runSize; i++) {
-      Mat image = imread(baseImagePath + images[n + i]);
+      string imagePath = baseImagePath + images[n + i];
+      Mat image = imread(imagePath);
+
+    if (image.empty()) {
+        std::cerr << "Error: Could not load image at: "<< imagePath << std::endl;
+        return;
+    }
 
       /*image pre-process*/
       Mat image2 = cv::Mat(inHeight, inWidth, CV_8SC3);
@@ -286,7 +292,7 @@ int main(int argc, char* argv[])
   std::vector<std::string> args(3);
 
   args[0] = "/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/compiled/kr260_cifar10_tf2_resnet18.xmodel";
-  args[1] = "/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/test_images";
+  args[1] = "/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/test_images/";
   args[2] = "/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/cifar10_labels.dat";
 
   baseImagePath = std::string(args[1]); //path name of the folder with test images

@@ -43,21 +43,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "get_dpu_fps::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-get_dpu_fps-Debug-88d2dc7ae7c397350e41.json",
+					"jsonFile" : "target-get_dpu_fps-Debug-18fc5136ec43113ed868.json",
 					"name" : "get_dpu_fps",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "main_int8::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-main_int8-Debug-edc9a3c3c813c591f3ec.json",
+					"jsonFile" : "target-main_int8-Debug-b27b8cc84d90a2071c14.json",
 					"name" : "main_int8",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test-Debug-6492f859a25f1b0b288c.json",
+					"jsonFile" : "target-test-Debug-856b20e0494838226c24.json",
 					"name" : "test",
 					"projectIndex" : 0
 				}
