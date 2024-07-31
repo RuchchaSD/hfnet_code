@@ -277,16 +277,22 @@ void run_CNN(vart::Runner* runner) {
  */
 int main(int argc, char* argv[])
 {
-  // Check args
-  if (argc != 4) {
-    cout << "Usage: run_cnn elf_pathName test_images_pathname, labels_filename" << endl;
-    return -1;
-  }
+  // // Check args
+  // if (argc != 4) {
+  //   cout << "Usage: run_cnn elf_pathName test_images_pathname, labels_filename" << endl;
+  //   return -1;
+  // }
 
-  baseImagePath = std::string(argv[2]); //path name of the folder with test images
-  wordsPath     = std::string(argv[3]); //filename of the labels
+  std::vector<std::string> args(3);
 
-  auto graph = xir::Graph::deserialize(argv[1]);
+  args[0] = "/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/compiled/kr260_cifar10_tf2_resnet18.xmodel";
+  args[1] = "/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/test_images";
+  args[2] = "/root/jupyter_notebooks/pynq-dpu/cifar10_tf2/cifar10_labels.dat";
+
+  baseImagePath = std::string(args[1]); //path name of the folder with test images
+  wordsPath     = std::string(args[2]); //filename of the labels
+
+  auto graph = xir::Graph::deserialize(args[0]);
   auto subgraph = get_dpu_subgraph(graph.get());
   CHECK_EQ(subgraph.size(), 1u)
       << "CNN should have one and only one dpu subgraph.";

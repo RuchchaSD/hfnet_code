@@ -92,4 +92,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/main_int8.dir/DependInfo.cmake"
   "CMakeFiles/get_dpu_fps.dir/DependInfo.cmake"
+  "CMakeFiles/test.dir/DependInfo.cmake"
   )

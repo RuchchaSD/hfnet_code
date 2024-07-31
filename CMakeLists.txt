@@ -40,6 +40,12 @@ add_executable(get_dpu_fps
     src/get_dpu_fps.cc 
 )
 
+# Define the third executable
+add_executable(test
+    ${COMMON_SOURCES}
+    src/test.cpp
+)
+
 # Link libraries for the first executable
 target_link_libraries(main_int8
     ${OpenCV_LIBS}
@@ -52,6 +58,16 @@ target_link_libraries(main_int8
 
 # Link libraries for the second executable
 target_link_libraries(get_dpu_fps
+    ${OpenCV_LIBS}
+    vart-runner
+    xir
+    unilog
+    glog
+    Threads::Threads
+)
+
+# Link libraries for the third executable
+target_link_libraries(test
     ${OpenCV_LIBS}
     vart-runner
     xir

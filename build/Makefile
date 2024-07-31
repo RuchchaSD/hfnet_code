@@ -142,6 +142,19 @@ get_dpu_fps/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/get_dpu_fps.dir/build.make CMakeFiles/get_dpu_fps.dir/build
 .PHONY : get_dpu_fps/fast
 
+#=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
+
 src/common.o: src/common.cpp.o
 .PHONY : src/common.o
 
@@ -149,6 +162,7 @@ src/common.o: src/common.cpp.o
 src/common.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_int8.dir/build.make CMakeFiles/main_int8.dir/src/common.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/get_dpu_fps.dir/build.make CMakeFiles/get_dpu_fps.dir/src/common.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/common.cpp.o
 .PHONY : src/common.cpp.o
 
 src/common.i: src/common.cpp.i
@@ -158,6 +172,7 @@ src/common.i: src/common.cpp.i
 src/common.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_int8.dir/build.make CMakeFiles/main_int8.dir/src/common.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/get_dpu_fps.dir/build.make CMakeFiles/get_dpu_fps.dir/src/common.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/common.cpp.i
 .PHONY : src/common.cpp.i
 
 src/common.s: src/common.cpp.s
@@ -167,6 +182,7 @@ src/common.s: src/common.cpp.s
 src/common.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_int8.dir/build.make CMakeFiles/main_int8.dir/src/common.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/get_dpu_fps.dir/build.make CMakeFiles/get_dpu_fps.dir/src/common.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/common.cpp.s
 .PHONY : src/common.cpp.s
 
 src/get_dpu_fps.o: src/get_dpu_fps.cc.o
@@ -217,6 +233,30 @@ src/main_int8.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_int8.dir/build.make CMakeFiles/main_int8.dir/src/main_int8.cc.s
 .PHONY : src/main_int8.cc.s
 
+src/test.o: src/test.cpp.o
+.PHONY : src/test.o
+
+# target to build an object file
+src/test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/test.cpp.o
+.PHONY : src/test.cpp.o
+
+src/test.i: src/test.cpp.i
+.PHONY : src/test.i
+
+# target to preprocess a source file
+src/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/test.cpp.i
+.PHONY : src/test.cpp.i
+
+src/test.s: src/test.cpp.s
+.PHONY : src/test.s
+
+# target to generate assembly for a file
+src/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/test.cpp.s
+.PHONY : src/test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -227,6 +267,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... get_dpu_fps"
 	@echo "... main_int8"
+	@echo "... test"
 	@echo "... src/common.o"
 	@echo "... src/common.i"
 	@echo "... src/common.s"
@@ -236,6 +277,9 @@ help:
 	@echo "... src/main_int8.o"
 	@echo "... src/main_int8.i"
 	@echo "... src/main_int8.s"
+	@echo "... src/test.o"
+	@echo "... src/test.i"
+	@echo "... src/test.s"
 .PHONY : help
 
 
